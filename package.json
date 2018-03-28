@@ -14,5 +14,14 @@
     "gulp-autoprefixer": "^5.0.0",
     "gulp-sass": "^3.1.0"
   },
-  "description": ""
+  "description": "",
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bartekma89/Project-HTML-Awax.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bartekma89/Project-HTML-Awax/issues"
+  },
+  "homepage": "https://github.com/bartekma89/Project-HTML-Awax#readme"
 }
