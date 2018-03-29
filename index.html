@@ -13,29 +13,38 @@
     <!-- main container -->
     <div class="main-container">
         <!-- navbar & -->
-        <section id="header">
-            <nav>
-                <div class="logo"><img src="src/images/header/logo.png" alt="logo"></div>
-                <div class="nav-bar">
-                    <ul class="nav-content">
-                        <li class="active"><a href="#!">home</a></li>
-                        <li class="active"><a href="#!">about us</a></li>
-                        <li class="active"><a href="#!">services</a></li>
-                        <li class="active"><a href="#!">our projects</a></li>
-                        <li class="active"><a href="#!">our team</a></li>
-                        <li class="active"><a href="#!">happy clients</a></li>
-                        <li class="active"><a href="#!">price</a></li>
-                        <li class="active"><a href="#!">some facts</a></li>
-                        <li class="active"><a href="#!">contact us</a></li>
-                    </ul>
-                </div>
-            </nav>
-            <!-- header -->
-            <h1>design is about<br/><span>communication</span></h1>
-            <h3>call us: +00 0 1234 5678</h3>
-            <button id="getInTouch">get in touch!</button>
+        <section id="nav">
+            <div class="container">
+                <nav>
+                    <div class="logo"><img src="src/images/nav/logo.png" alt="logo"></div>
+                    <div class="nav-bar">
+                        <ul class="nav-content">
+                            <li><a class="active" href="#!">home</a></li>
+                            <li><a href="#!">about us</a></li>
+                            <li><a href="#!">services</a></li>
+                            <li><a href="#!">our projects</a></li>
+                            <li><a href="#!">our team</a></li>
+                            <li><a href="#!">happy clients</a></li>
+                            <li><a href="#!">price</a></li>
+                            <li><a href="#!">some facts</a></li>
+                            <li><a href="#!">contact us</a></li>
+                        </ul>
+                        <div class="nav-mobile">
+                            <a href="#!" id="nav-toggle"><span></span></a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
         </section>
-        <div class="telephone" style="background-color: #000"><img src="src/images/header/telephone.png" alt="telephone"></div>
+        <!-- header -->
+        <section id="header">
+            <div class="container content">
+                <h1>design is about<br/><span>communication</span></h1>
+                <h3>call us: +00 0 1234 5678</h3>
+                <button id="getInTouch"><span>get in touch!</span></button>
+            </div>
+            <div class="telephone"><img src="src/images/header/telephone.png" alt="telephone"></div>
+        </section>
         <!-- about us -->
         <section id="about">
             <div class="container">
@@ -48,7 +57,7 @@
                         <p>
                             Praesent metus urna, feugiat a placerat vel, elementum at leo. Quisque vel fermentum ipsum. Nulla at facilisis est, vel condimentum ligula. Mauris volutpat vitae risus sed pellentesque. Praesent fermentum neque ac tellus gravida, at varius sem accumsan. Nam porta erat id sapien consectetur. Fusce sed purus eros. Vivamus rhoncus, ipsum in tempus fermentum, orci leo facilisis purus. Nam porta erat id sapien consectetur. Fusce sed purus eros. Vivamus rhoncus, ipsum in tempus fermentum, orci leo facilisis purus.
                         </p>
-                        <button id="more">learn more</button>
+                        <button id="more"><span>learn more</span></button>
                     </div>
                     <div class="column">
                         <img src="src/images/about-us/video-pic.png" alt="video-picture">
@@ -212,72 +221,72 @@
                         </div>
                     </div>
                 </div>
-                <button>more projects</button>
+                <button><span>more projects</span></button>
             </div>
         </section>
         <!-- team -->
         <section id="team">
-        	<div class="container">
-        		<div class="title">
+            <div class="container">
+                <div class="title">
                     <h2>our projects</h2>
                     <p>what we create</p>
                 </div>
-				<div class="row">
-					<div class="column">
-						<img src="" alt="">
-						<div class="content">
-							<h4>jane doe</h4>
-							<p>Master mind</p>
-						</div>
-						<div class="social-media">
-							<button class="social-icon"><i class="fab fa-twitter"></i></button>
+                <div class="row">
+                    <div class="column">
+                        <img src="" alt="">
+                        <div class="content">
+                            <h4>jane doe</h4>
+                            <p>Master mind</p>
+                        </div>
+                        <div class="social-media">
+                            <button class="social-icon"><i class="fab fa-twitter"></i></button>
                             <button class="social-icon"><i class="fab fa-instagram"></i></button>
                             <button class="social-icon"><i class="fab fa-linkedin-in"></i></button>
                             <button class="social-icon"><i class="fab fa-facebook-f"></i></button>
                             <button class="social-icon"><i class="fab fa-youtube"></i></button>
                             <button class="social-icon"><i class="fab fa-google-plus-g"></i></button>
                             <button class="social-icon"><i class="fas fa-ellipsis-h"></i></button>
-						</div>
-					</div>
-					<div class="column">
-						<img src="" alt="">
-						<div class="content">
-							<h4>mike shiller</h4>
-							<p>Creative head</p>
-						</div>
-						<div class="social-media">
-							<button class="social-icon"><i class="fab fa-twitter"></i></button>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <img src="" alt="">
+                        <div class="content">
+                            <h4>mike shiller</h4>
+                            <p>Creative head</p>
+                        </div>
+                        <div class="social-media">
+                            <button class="social-icon"><i class="fab fa-twitter"></i></button>
                             <button class="social-icon"><i class="fab fa-instagram"></i></button>
                             <button class="social-icon"><i class="fab fa-linkedin-in"></i></button>
                             <button class="social-icon"><i class="fab fa-facebook-f"></i></button>
                             <button class="social-icon"><i class="fab fa-youtube"></i></button>
                             <button class="social-icon"><i class="fab fa-google-plus-g"></i></button>
                             <button class="social-icon"><i class="fas fa-ellipsis-h"></i></button>
-						</div>
-					</div>
-					<div class="column">
-						<img src="" alt="">
-						<div class="content">
-							<h4>anna johns</h4>
-							<p>Technical lead</p>
-						</div>
-						<div class="social-media">
-							<button class="social-icon"><i class="fab fa-twitter"></i></button>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <img src="" alt="">
+                        <div class="content">
+                            <h4>anna johns</h4>
+                            <p>Technical lead</p>
+                        </div>
+                        <div class="social-media">
+                            <button class="social-icon"><i class="fab fa-twitter"></i></button>
                             <button class="social-icon"><i class="fab fa-instagram"></i></button>
                             <button class="social-icon"><i class="fab fa-linkedin-in"></i></button>
                             <button class="social-icon"><i class="fab fa-facebook-f"></i></button>
                             <button class="social-icon"><i class="fab fa-youtube"></i></button>
                             <button class="social-icon"><i class="fab fa-google-plus-g"></i></button>
                             <button class="social-icon"><i class="fas fa-ellipsis-h"></i></button>
-    						</div>
-					</div>
-				</div>
-        	</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- opinions -->
         <section id="opinions">
-        	<div class="container">
-        		<div class="title">
+            <div class="container">
+                <div class="title">
                     <h2>happy clients</h2>
                     <p>client reviews</p>
                 </div>
@@ -298,7 +307,7 @@
                     <span class="dot"></span>
                     <span class="dot"></span>
                 </div>
-        	</div>
+            </div>
         </section>
         <!-- client logos -->
         <section id="logos">
@@ -332,7 +341,7 @@
                             <li>Time tracking</li>
                             <li>Custom views</li>
                         </ul>
-                        <button>Choose</button>
+                        <button><span>Choose</span></button>
                     </div>
                     <div class="column box">
                         <h3>standart</h3>
@@ -345,7 +354,7 @@
                             <li>Time tracking</li>
                             <li>Custom views</li>
                         </ul>
-                        <button>Choose</button>
+                        <button><span>Choose</span></button>
                     </div>
                     <div class="column box">
                         <h3>luxe</h3>
@@ -358,7 +367,7 @@
                             <li>Time tracking</li>
                             <li>Custom views</li>
                         </ul>
-                        <button>Choose</button>
+                        <button><span>Choose</span></button>
                     </div>
                     <div class="column box">
                         <h3>premium</h3>
@@ -371,7 +380,7 @@
                             <li>Time tracking</li>
                             <li>Custom views</li>
                         </ul>
-                        <button>Choose</button>
+                        <button><span>Choose</span></button>
                     </div>
                 </div>
             </div>
@@ -388,14 +397,137 @@
                         <img src="src/images/premium/img.png" alt="">
                     </div>
                     <div class="column">
-                        
+                        <div class="feature">
+                            <h3>first feature</h3>
+                            <p>Praesent metus urna, feugiat a placerat vel, elementum at leo. Quisque vel fermentum ipsum. Nulla at facilisis est.</p>
+                            <ul>
+                                <li>feature one</li>
+                                <li>feature two</li>
+                                <li>feature three</li>
+                            </ul>
+                        </div>
+                        <div class="feature">
+                            <h3>second feature</h3>
+                            <p>Praesent metus urna, feugiat a placerat vel</p>
+                        </div>
+                        <div class="feature">
+                            <h3>three feature</h3>
+                            <p>Praesent metus urna, feugiat a placerat vel, elementum at leo.</p>
+                        </div>
+                    </div>
+                </div>
+                <button><span>get in touch</span></button>
+            </div>
+        </section>
+        <section id="facts">
+            <div class="container">
+                <div class="title">
+                    <h2>premium</h2>
+                    <p>even more features available</p>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <h3>1000</h3>
+                        <span>&#9866;</span>
+                        <h4>design projects released</h4>
+                        <p>Praesent metus urna, feugiata placerat elementum at leo</p>
+                    </div>
+                    <div class="column">
+                        <h3>900</h3>
+                        <span>&#9866;</span>
+                        <h4>photos</h4>
+                        <p>Praesent metus urna, feugiata placerat elementum at leo</p>
+                    </div>
+                    <div class="column">
+                        <h3>500</h3>
+                        <span>&#9866;</span>
+                        <h4>marketing ideas</h4>
+                        <p>Praesent metus urna, feugiata placerat elementum at leo</p>
+                    </div>
+                    <div class="column">
+                        <h3>100</h3>
+                        <span>&#9866;</span>
+                        <h4>exhibitions</h4>
+                        <p>Praesent metus urna, feugiata placerat elementum at leo</p>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- media section -->
+        <section id="social-media">
+            <div class="container">
+                <span>
+                    <img src="src/images/social-media/share.png" alt="">
+                    <p>tell about us:</p>
+                </span>
+                <span class="btn-group">
+                    <button class="btn-circle"><i class="fab fa-twitter"></i></button>
+                    <button class="btn-circle"><i class="fab fa-linkedin-in"></i></button>
+                    <button class="btn-circle"><i class="fab fa-facebook-f"></i></button>
+                    <button class="btn-circle"><i class="fab fa-google-plus-g"></i></button>
+                    <button class="btn-circle"><i class="fab fa-pinterest-p"></i></button>
+                </span>
+            </div>
+        </section>
+        <!-- form-conctact -->
+        <section id="contact">
+            <div class="container">
+                <div class="title">
+                    <h2>contact us</h2>
+                    <p>our agency located in melbourne, australia</p>
+                </div>
+                <form>
+                    <div class="row-input">
+                        <input type="text" placeholder="NAME">
+                        <input type="email" placeholder="EMAIL">
+                    </div>
+                    <input type="text" placeholder="SUBJECT">
+                    <textarea cols="30" rows="1" placeholder="MESSAGE"></textarea>
+                    <div class='buttonHolder'>
+                        <button type="button"><span>send message</span></button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- map -->
+        <section id="map">
+            mapa
+        </section>
+        <!-- footer -->
+        <footer>
+            <a href="" id="button"><i class="arrow up"></i></a>
+            <dviv class="container">
+                <div class="row">
+                    <div class="column">
+                        <div class="social-media">
+                            <button class="social-icon"><i class="fab fa-twitter"></i></button>
+                            <button class="social-icon"><i class="fab fa-instagram"></i></button>
+                            <button class="social-icon"><i class="fab fa-linkedin-in"></i></button>
+                            <button class="social-icon"><i class="fab fa-facebook-f"></i></button>
+                            <button class="social-icon"><i class="fab fa-youtube"></i></button>
+                            <button class="social-icon"><i class="fab fa-google-plus-g"></i></button>
+                            <button class="social-icon"><i class="fas fa-ellipsis-h"></i></button>
+                        </div>
+                        <span class='awax'>awax &copy; 2016</span>
+                    </div>
+                    <div class="column">
+                        <p>
+                            Nulla iaculis enim a magna tempor congue. Sed aliquam dignissim hendrerit. Duis erat nulla, pellentesque at enim in, scelerisque placerat nunc. Nulla vestibulum ex sed neque auctor rutrum. Donec fringilla tincidunt aliquet. Nullam rhoncus urna massa, vulputate congue velit pulvinar suscipit. Mauris laoreet blandit pharetra. Suspendisse rutrum dolor at augue convallis, eget dapibus nunc consequat. Sed diam nulla, elementum non laoreet eu,vulputate urna, at pellentesque risus orci in ante.
+                        </p>
+                    </div>
+                    <div class="column">
+                        <form>
+                            <input type="text" placeholder="EMAIL TO SUBSCRIBE">
+                            <button type="button">subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </dviv>
+        </footer>
     </div>
     <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="src/js/main.js"></script>
 </body>
 
 </html>

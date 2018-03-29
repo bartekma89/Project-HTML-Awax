@@ -1,0 +1,64 @@
+@import '_common.scss';
+
+#header {
+	background-image: url('../images/header/bg.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+
+	.telephone {
+		position: absolute;
+		bottom: -100px;
+		right: 85px;
+		transform: translate(-50%, 50%);
+		border-radius: 50%;
+		border: 1px solid $background-gold;
+		width: 65px;
+		height: 65px;
+		background-color: $background-gold;
+		img {
+			@include position-center;
+			position: absolute;
+		}
+	}
+
+	.content {
+		@include position-center;
+
+		h1 {
+			color: $font-header-light-color;
+			font-family: $font-basic;
+			font-size: $font-veryLarge-size;
+			font-weight: $font-bold-weight;
+			text-transform: uppercase;
+			span {
+				color: #b88b58;
+			}
+		}
+
+		h3 {
+			color: $font-header-light-color;
+			font-family: $font-basic;
+			font-size: $font-large-size;
+			font-weight: $font-semiBold-weight;
+			text-transform: uppercase;
+			margin: 25px auto;
+		}
+
+		button {
+			height: 45px;
+			width: 185px;
+			background-color: $background-gold;
+			border: none;
+			border-radius: 25px;
+			margin: 30px auto;
+			color: #ffffff;
+			font-family: Montserrat;
+			font-size: 12px;
+			font-weight: 700;
+			line-height: 18px;
+			text-transform: uppercase;
+		}
+	}
+}

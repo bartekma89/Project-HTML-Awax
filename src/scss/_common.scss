@@ -1,0 +1,67 @@
+// fonts type
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,700i&subset=latin-ext');
+
+//font variables
+$font-basic: 'Montserrat', sans-serif;
+
+//fonts style
+$font-light-weight: 300;
+$font-medium-weight: 400;
+$font-semiBold-weight: 600;
+$font-bold-weight: 700;
+
+$font-bottom-size: 12px;
+$font-light-size: 12px;
+$font-medium-size: 14px;
+$font-large-size: 24px;
+$font-veryLarge-size: 72px;
+
+$font-header-description-color: #aeaeae;
+$font-paragraph-color: #242424;
+$font-description-color: #7e7e7e;
+$font-header-light-color: #fff;
+$font-header-dark-color: #000;
+$font-header-gold-color: #b88b58;
+
+//colors
+$background-nav: #000;
+$background-gold: #b88b58;
+$background-body: #fff;
+$background-icon-light: #bebebe;
+$background-icon-dark: #373737;
+$background-darkGrey: #373737;
+$background-price: #ededed;
+$background-grey: #f7f7f7;
+
+//media queries
+$tablet: 768px;
+$destop: 992px;
+$largeDesktop: 1200px;
+
+//mixins
+
+@mixin position-center {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+// ----------
+
+* {
+	box-sizing: border-box;
+	font-family: $font-basic;
+}
+
+body {
+	background-color: $background-body;
+	overflow-x: hidden;
+}
+
+.container {
+	width: 80%;
+	padding: 0;
+	margin: 0;
+}
