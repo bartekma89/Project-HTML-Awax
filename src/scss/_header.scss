@@ -9,14 +9,16 @@
 
 	.telephone {
 		position: absolute;
-		bottom: -100px;
-		right: 85px;
-		transform: translate(-50%, 50%);
+		right: 10%;
+		bottom: 0;
+		top: 100%;
+		transform: translate(50%, 60%);
 		border-radius: 50%;
 		border: 1px solid $background-gold;
 		width: 65px;
 		height: 65px;
 		background-color: $background-gold;
+		cursor: pointer;
 		img {
 			@include position-center;
 			position: absolute;
@@ -24,12 +26,13 @@
 	}
 
 	.content {
-		@include position-center;
+		@include position-vertical;
+		text-align: center;
 
 		h1 {
 			color: $font-header-light-color;
 			font-family: $font-basic;
-			font-size: $font-veryLarge-size;
+			font-size: 48px;
 			font-weight: $font-bold-weight;
 			text-transform: uppercase;
 			span {
@@ -40,25 +43,32 @@
 		h3 {
 			color: $font-header-light-color;
 			font-family: $font-basic;
-			font-size: $font-large-size;
+			font-size: 18px;
 			font-weight: $font-semiBold-weight;
 			text-transform: uppercase;
 			margin: 25px auto;
 		}
 
 		button {
-			height: 45px;
-			width: 185px;
-			background-color: $background-gold;
-			border: none;
-			border-radius: 25px;
-			margin: 30px auto;
-			color: #ffffff;
-			font-family: Montserrat;
-			font-size: 12px;
-			font-weight: 700;
-			line-height: 18px;
-			text-transform: uppercase;
+			@include btn-template;
+		}
+	}
+
+	@media (min-width: $tablet) {
+		.content {
+			h1 {
+				font-size: $font-veryLarge-size;
+			}
+
+			h3 {
+				font-size: $font-large-1-size;
+			}
+		}
+	}
+
+	@media (min-width: $largeDesktop) {
+		.telephone {
+			transform: translate(50%, 100%);
 		}
 	}
 }

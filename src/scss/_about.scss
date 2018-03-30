@@ -1,0 +1,35 @@
+@import '_common.scss';
+
+#about {
+	.title {
+		@include title-template;
+	}
+
+	.content {
+		p {
+			color: $font-paragraph-color;
+			font-family: $font-basic;
+			font-size: $font-medium-size;
+			font-weight: $font-light-weight;
+			line-height: 25px;
+		}
+		button {
+			@include btn-template;
+		}
+
+		img {
+			width: 400px;
+		}
+
+		@media (min-width: $desktop) and (max-width: $largeDesktop) {
+			img {
+				width: 370px;
+			}
+		}
+		@media (min-width: $largeDesktop) {
+			img {
+				width: 450px;
+			}
+		}
+	}
+}

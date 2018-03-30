@@ -1,0 +1,80 @@
+@import '_common.scss';
+
+#services {
+	background-color: $background-black;
+	padding-bottom: 15px;
+
+	.title {
+		@include title-template;
+		h2 {
+			color: $font-header-light-color;
+		}
+	}
+
+	.content {
+		.col-custom {
+			height: 220px;
+			padding-left: 15%;
+			padding-right: 15%;
+			text-align: center;
+			&:not(:last-child) {
+				border-bottom: 2px solid $border-color;
+			}
+		}
+		img {
+			margin: 25px auto;
+			height: 58px;
+			width: 58px;
+		}
+		h3,
+		p {
+			font-family: $font-basic;
+		}
+		h3 {
+			color: $font-header-light-color;
+			font-size: $font-medium-2-size;
+			font-weight: $font-semiBold-weight;
+			line-height: 24px;
+			text-transform: uppercase;
+			margin-bottom: 5px;
+			padding-left: 15%;
+			padding-right: 15%;
+		}
+
+		p {
+			font-size: $font-light-size;
+			font-weight: $font-light-weight;
+			color: $font-description-dark-color;
+			line-height: 21px;
+			margin-bottom: 10px;
+		}
+	}
+
+	@media (min-width: $tablet) {
+		.content {
+			.col-custom {
+				padding-left: 8px;
+				padding-right: 8px;
+				text-align: center;
+				border-right: 2px solid $border-color;
+				margin-bottom: 20px;
+				&:nth-of-type(odd) {
+					border-left: 2px solid $border-color;
+				}
+				&:not(:last-child) {
+					border-bottom: none;
+				}
+			}
+		}
+	}
+
+	@media (min-width: $desktop) {
+		.content {
+			.col-custom {
+				&:nth-of-type(2) {
+					border-right: none;
+				}
+			}
+		}
+	}
+}

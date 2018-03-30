@@ -1,0 +1,40 @@
+@import '_common.scss';
+
+#projects {
+	background-color: #f7f7f7;
+	text-align: center;
+	.title {
+		@include title-template;
+	}
+
+	.btn-group {
+		background-color: #ededed;
+		border: 1px solid #cfcfcf;
+		border-radius: 45px;
+		width: 65%;
+
+		a {
+			display: inline-block;
+			color: $font-header-dark-color;
+			font-family: $font-basic;
+			font-size: $font-medium-size;
+			font-weight: $font-light-weight;
+			line-height: 18px;
+			text-transform: uppercase;
+			padding: 20px 25px 17px 25px;
+			border-right: 1px solid #cfcfcf;
+			border-bottom: 3px solid transparent;
+			border-top: 3px solid transparent;
+			&:first-of-type {
+				padding-left: 30px;
+			}
+			&:last-of-type {
+				border-right: none;
+				padding-right: 30px;
+			}
+			&:hover {
+				border-bottom: 3px solid $background-gold;
+			}
+		}
+	}
+}

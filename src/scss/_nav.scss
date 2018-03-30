@@ -49,8 +49,10 @@
 
 #nav {
 	.container {
-		background-color: $background-nav;
+		background-color: $background-black;
 		width: 100%;
+		position: fixed;
+		z-index: 999;
 		nav {
 			margin: 0 auto;
 			font-family: $font-basic;
@@ -63,6 +65,7 @@
 				.nav-content {
 					display: none;
 					li {
+						padding-left: 10px;
 						display: block;
 						float: none;
 						border-top: 0.5px solid $background-darkGrey;
@@ -92,7 +95,10 @@
 				@include hamburger;
 			}
 		}
-		@media (min-width: $largeDesktop) {
+	}
+	@media (min-width: $largeDesktop) {
+		.container {
+			position: static;
 			nav {
 				height: 100px;
 				position: relative;
@@ -115,6 +121,7 @@
 						li {
 							border-top: none;
 							display: inline-block;
+							padding-left: 0;
 							&:hover {
 								background-color: transparent;
 							}

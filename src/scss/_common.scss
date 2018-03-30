@@ -10,24 +10,30 @@ $font-medium-weight: 400;
 $font-semiBold-weight: 600;
 $font-bold-weight: 700;
 
-$font-bottom-size: 12px;
+$font-button-size: 12px;
 $font-light-size: 12px;
 $font-medium-size: 14px;
-$font-large-size: 24px;
+$font-medium-2-size: 18px;
+$font-large-1-size: 24px;
+$font-large-2-size: 30px;
 $font-veryLarge-size: 72px;
 
 $font-header-description-color: #aeaeae;
 $font-paragraph-color: #242424;
 $font-description-color: #7e7e7e;
+$font-description-dark-color: #666;
 $font-header-light-color: #fff;
 $font-header-dark-color: #000;
 $font-header-gold-color: #b88b58;
 
 //colors
-$background-nav: #000;
+$font-gold-color: #b88b58;
+$background-button-hover: #000;
+$background-black: #000;
 $background-gold: #b88b58;
 $background-body: #fff;
 $background-icon-light: #bebebe;
+$border-color: #393939;
 $background-icon-dark: #373737;
 $background-darkGrey: #373737;
 $background-price: #ededed;
@@ -35,7 +41,7 @@ $background-grey: #f7f7f7;
 
 //media queries
 $tablet: 768px;
-$destop: 992px;
+$desktop: 992px;
 $largeDesktop: 1200px;
 
 //mixins
@@ -45,7 +51,61 @@ $largeDesktop: 1200px;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+}
+
+@mixin position-vertical {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+@mixin btn-template {
+	height: 45px;
+	width: 190px;
+	background-color: $background-gold;
+	border: none;
+	border-radius: 25px;
+	margin: 35px auto;
+	color: $font-header-light-color;
+	@media (min-width: $desktop) {
+		transition: all 0.4s ease-in-out;
+	}
+	span {
+		font-family: Montserrat;
+		font-size: $font-button-size;
+		font-weight: $font-bold-weight;
+		line-height: 18px;
+		text-transform: uppercase;
+	}
+	@media (min-width: $desktop) {
+		&:hover {
+			background-color: $background-button-hover;
+			color: $font-gold-color;
+			transform: scale(1.1);
+		}
+	}
+}
+
+@mixin title-template {
+	margin: 65px auto 55px auto;
 	text-align: center;
+	h2,
+	p {
+		font-family: $font-basic;
+		font-weight: $font-semiBold-weight;
+		line-height: 30px;
+		text-transform: uppercase;
+	}
+
+	h2 {
+		font-size: $font-large-2-size;
+		color: $font-header-dark-color;
+		margin-bottom: 10px;
+	}
+	p {
+		font-size: $font-medium-size;
+		color: $font-header-description-color;
+	}
 }
 
 // ----------
@@ -58,10 +118,11 @@ $largeDesktop: 1200px;
 body {
 	background-color: $background-body;
 	overflow-x: hidden;
+	width: 100vw;
 }
 
 .container {
 	width: 80%;
 	padding: 0;
-	margin: 0;
+	margin: 0 auto;
 }
