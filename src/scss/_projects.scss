@@ -11,29 +11,153 @@
 		background-color: #ededed;
 		border: 1px solid #cfcfcf;
 		border-radius: 45px;
-		width: 65%;
+		width: 70%;
+		font-size: 0;
+		margin-bottom: 35px;
 
 		a {
-			display: inline-block;
 			color: $font-header-dark-color;
 			font-family: $font-basic;
 			font-size: $font-medium-size;
 			font-weight: $font-light-weight;
 			line-height: 18px;
 			text-transform: uppercase;
-			padding: 20px 25px 17px 25px;
-			border-right: 1px solid #cfcfcf;
-			border-bottom: 3px solid transparent;
-			border-top: 3px solid transparent;
-			&:first-of-type {
-				padding-left: 30px;
+			display: block;
+			padding: 15px;
+			&:not(:last-of-type) {
+				border-bottom: 1px solid #cfcfcf;
 			}
-			&:last-of-type {
-				border-right: none;
-				padding-right: 30px;
+		}
+	}
+
+	.row-grid {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		margin: 0;
+		padding: 0;
+		.column {
+			.image {
+				.overlay {
+					display: none;
+				}
+				margin-top: 30px;
+				img {
+					width: 50%;
+				}
 			}
-			&:hover {
-				border-bottom: 3px solid $background-gold;
+		}
+	}
+
+	button {
+		@include btn-template;
+	}
+
+	@media (min-width: $tablet) {
+		.row-grid {
+			grid-template-columns: repeat(2, 1fr);
+			grid-column-gap: 30px;
+			.column {
+				.image {
+					img {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+
+	@media (min-width: $desktop) {
+		.row-grid {
+			.column {
+				.image {
+					cursor: pointer;
+					position: relative;
+					.overlay {
+						display: block;
+						position: absolute;
+						top: 0;
+						bottom: 0;
+						left: 0;
+						right: 0;
+						height: 100%;
+						width: 100%;
+						background-color: rgba(0, 0, 0, 0);
+						transition: 0.5s ease-in-out;
+
+						.content {
+							transition: 0.5s ease-in-out;
+							position: absolute;
+							top: 50%;
+							transform: translateY(-50%);
+							opacity: 0;
+							h4,
+							p {
+								font-family: $font-basic;
+								color: $font-header-light-color;
+								font-weight: $font-light-weight;
+							}
+							h4 {
+								font-size: $font-medium-2-size;
+								font-weight: $font-medium-weight;
+								line-height: 30px;
+								text-transform: uppercase;
+							}
+							p {
+								font-size: $font-light-size;
+								line-height: 18px;
+							}
+						}
+					}
+
+					&:hover .overlay {
+						background-color: rgba(0, 0, 0, 0.75);
+						.content {
+							opacity: 1;
+						}
+					}
+
+					img {
+						width: 80%;
+					}
+				}
+			}
+		}
+	}
+
+	@media (min-width: $largeDesktop) {
+		.row-grid {
+			grid-template-columns: repeat(4, 1fr);
+			.column {
+				.image {
+					img {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+
+	@media (min-width: $desktop) {
+		.btn-group {
+			width: 650px;
+			a {
+				display: inline-block;
+				padding: 17px 15px;
+				border-bottom: 3px solid transparent;
+				border-top: 3px solid transparent;
+				&:not(:last-of-type) {
+					border-bottom: none;
+					border-right: 1px solid #cfcfcf;
+				}
+				&:first-of-type {
+					padding-left: 15px;
+				}
+				&:last-of-type {
+					padding-right: 15px;
+				}
+				&:hover {
+					border-bottom: 3px solid $background-gold;
+				}
 			}
 		}
 	}

@@ -1,0 +1,24 @@
+@import '_common.scss';
+
+#logos {
+	text-align: center;
+
+	.row-grid {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap: 45px;
+		margin: 45px auto;
+	}
+
+	@media (min-width: $tablet) {
+		.row-grid {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+
+	@media (min-width: $desktop) {
+		.row-grid {
+			grid-template-columns: repeat(6, 1fr);
+		}
+	}
+}

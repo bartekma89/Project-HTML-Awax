@@ -1,0 +1,75 @@
+@import '_common.scss';
+
+#team {
+	background-image: url('../images/team/bg-image.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	.title {
+		@include title-template;
+		h2 {
+			color: $font-header-light-color;
+		}
+	}
+
+	.team-member {
+		text-align: center;
+		padding-top: 45px;
+		padding-bottom: 45px;
+		background-color: #fff;
+		width: 70%;
+		margin: 0 auto;
+		&:last-of-type {
+			margin-bottom: 30px;
+		}
+		.content {
+			h4,
+			p {
+				color: $font-paragraph-color;
+				font-family: $font-basic;
+			}
+			h4 {
+				font-size: $font-medium-3-size;
+				font-weight: $font-medium-weight;
+				text-transform: uppercase;
+				margin-top: 45px;
+			}
+			p {
+				font-weight: $font-light-weight;
+				font-size: $font-medium-size;
+				line-height: 24px;
+				margin-bottom: 40px;
+			}
+
+			.btn-icon {
+				@include btn-social-icons-template;
+			}
+		}
+	}
+
+	@media (min-width: $tablet) {
+		.team-member {
+			width: 60%;
+		}
+	}
+
+	.row-grid {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap: 30px;
+		margin: 0;
+		padding: 0;
+	}
+
+	@media (min-width: $desktop) {
+		.row-grid {
+			grid-template-columns: repeat(3, 1fr);
+		}
+
+		.team-member {
+			width: 100%;
+			margin-bottom: 30px;
+		}
+	}
+}

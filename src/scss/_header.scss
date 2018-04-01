@@ -11,8 +11,7 @@
 		position: absolute;
 		right: 10%;
 		bottom: 0;
-		top: 100%;
-		transform: translate(50%, 60%);
+		transform: translate(50%, 50%);
 		border-radius: 50%;
 		border: 1px solid $background-gold;
 		width: 65px;
@@ -68,6 +67,7 @@
 
 	@media (min-width: $largeDesktop) {
 		.telephone {
+			top: 100%;
 			transform: translate(50%, 100%);
 		}
 	}

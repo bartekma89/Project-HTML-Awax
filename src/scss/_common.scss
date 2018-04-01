@@ -14,6 +14,7 @@ $font-button-size: 12px;
 $font-light-size: 12px;
 $font-medium-size: 14px;
 $font-medium-2-size: 18px;
+$font-medium-3-size: 21px;
 $font-large-1-size: 24px;
 $font-large-2-size: 30px;
 $font-veryLarge-size: 72px;
@@ -45,6 +46,23 @@ $desktop: 992px;
 $largeDesktop: 1200px;
 
 //mixins
+
+@mixin btn-social-icons-template {
+	width: 33px;
+	height: 33px;
+	border: none;
+	border-radius: 50%;
+	background-color: $background-icon-light;
+	cursor: pointer;
+	margin: auto 3px;
+	color: $font-header-light-color;
+	transition: all 0.3s ease-in-out;
+	@media (min-width: $desktop) {
+		&:hover {
+			background-color: $background-gold;
+		}
+	}
+}
 
 @mixin position-center {
 	position: relative;

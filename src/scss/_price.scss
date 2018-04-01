@@ -1,0 +1,22 @@
+@import '_common.scss';
+
+#price {
+	background-color: #ededed;
+
+	.title {
+		@include title-template;
+	}
+	text-align: center;
+	border: 1px solid red;
+	.row-grid {
+		border: 1px solid blue;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-row-gap: 30px;
+		.box {
+			margin: 0 auto;
+			background-color: #fff;
+			width: 255px;
+		}
+	}
+}
