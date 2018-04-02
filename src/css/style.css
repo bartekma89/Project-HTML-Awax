@@ -788,7 +788,7 @@ body {
   #price .row-grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-row-gap: 30px;
+    grid-gap: 30px;
     margin-bottom: 30px; }
     #price .row-grid .box {
       margin: 0 auto;
@@ -801,19 +801,18 @@ body {
         text-transform: uppercase; }
       #price .row-grid .box h2,
       #price .row-grid .box h3 {
-        color: #242424; }
+        color: #242424;
+        line-height: 21px; }
       #price .row-grid .box h2,
       #price .row-grid .box p,
       #price .row-grid .box li {
         font-weight: 400; }
       #price .row-grid .box h3 {
         font-size: 14px;
-        line-height: 21px;
         padding-bottom: 15px; }
       #price .row-grid .box h2 {
         font-size: 30px;
-        font-weight: 700;
-        line-height: 21px; }
+        font-weight: 700; }
       #price .row-grid .box p {
         color: #aeaeae;
         font-size: 10px;
@@ -866,6 +865,8 @@ body {
   @media (min-width: 768px) {
     #price .row-grid {
       grid-template-columns: repeat(2, 1fr); } }
-  @media (min-width: 992px) {
+  @media (min-width: 1200px) {
+    #price .container {
+      width: 90%; }
     #price .row-grid {
       grid-template-columns: repeat(4, 1fr); } }
