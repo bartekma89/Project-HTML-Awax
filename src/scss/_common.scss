@@ -10,6 +10,7 @@ $font-medium-weight: 400;
 $font-semiBold-weight: 600;
 $font-bold-weight: 700;
 
+$font-small-size: 10px;
 $font-button-size: 12px;
 $font-light-size: 12px;
 $font-medium-size: 14px;
@@ -130,12 +131,17 @@ $largeDesktop: 1200px;
 
 * {
 	box-sizing: border-box;
-	font-family: $font-basic;
+	margin: 0;
+	padding: 0;
 }
 
 body {
+	font-family: $font-basic;
 	background-color: $background-body;
 	overflow-x: hidden;
+}
+
+.main-container {
 	width: 100vw;
 }
 

@@ -1,5 +1,3 @@
-@import '_common.scss';
-
 #about {
 	.title {
 		@include title-template;
@@ -18,7 +16,7 @@
 		}
 
 		img {
-			width: 400px;
+			width: 300px;
 		}
 
 		@media (min-width: $desktop) and (max-width: $largeDesktop) {

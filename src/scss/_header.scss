@@ -1,5 +1,3 @@
-@import '_common.scss';
-
 #header {
 	background-image: url('../images/header/bg.png');
 	background-repeat: no-repeat;
@@ -31,7 +29,7 @@
 		h1 {
 			color: $font-header-light-color;
 			font-family: $font-basic;
-			font-size: 48px;
+			font-size: 32px;
 			font-weight: $font-bold-weight;
 			text-transform: uppercase;
 			span {
