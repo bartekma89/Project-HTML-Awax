@@ -1,0 +1,53 @@
+#contact {
+	background-color: $background-grey;
+	border-top: 0.5px solid $border-color-1;
+	text-align: center;
+
+	form {
+		margin: 0 auto;
+		input,
+		textarea {
+			display: grid;
+			grid-template-columns: repeat(1, 1fr);
+			grid-row-gap: 5px;
+			width: 100%;
+			margin: 10px auto;
+			border: none;
+			border-bottom: 2px solid #a4a4a4;
+			background-color: transparent;
+			color: $font-contact-color;
+			font-size: $font-constact-size;
+			font-weight: $font-semiBold-weight;
+			line-height: 25px;
+			text-transform: uppercase;
+		}
+
+		textarea {
+			padding-top: 40px;
+		}
+		.row-input {
+			display: grid;
+			grid-template-columns: repeat(1, 1fr);
+			width: 100%;
+		}
+
+		.submit {
+			@include btn-template;
+			margin: 60px auto;
+		}
+	}
+
+	@media (min-width: $tablet) {
+		form {
+			max-width: 550px;
+
+			textarea {
+				padding-top: 80px;
+			}
+			.row-input {
+				grid-template-columns: repeat(2, 1fr);
+				grid-gap: 30px;
+			}
+		}
+	}
+}
