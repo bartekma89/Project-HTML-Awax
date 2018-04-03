@@ -1,0 +1,75 @@
+#facts {
+	background-color: $background-black;
+	text-align: center;
+	.title {
+		h2 {
+			color: $font-header-light-color;
+		}
+	}
+
+	.fact {
+		h3,
+		h4 {
+		}
+		h3 {
+			text-transform: uppercase;
+			color: $font-header-gold-color;
+			font-size: $font-large-3-size;
+			font-weight: $font-bold-weight;
+			line-height: 28px;
+			margin-bottom: 10px;
+		}
+
+		h4 {
+			color: $font-header-light-color;
+			font-size: $font-medium-2-size;
+			font-weight: $font-semiBold-weight;
+			text-transform: uppercase;
+			line-height: 17px;
+		}
+
+		span {
+			color: $font-description-color;
+			font-size: $font-large-2-size;
+			font-weight: $font-bold-weight;
+			line-height: 25px;
+		}
+
+		p {
+			margin-top: 12px;
+			color: $font-description-color;
+			font-size: $font-light-size;
+			font-weight: $font-light-weight;
+			line-height: 18px;
+		}
+	}
+
+	.row-grid {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap: 30px;
+		margin-bottom: 50px;
+		.fact {
+			width: 45%;
+			margin: 0 auto;
+		}
+	}
+
+	@media (min-width: $tablet) {
+		.row-grid {
+			grid-template-columns: repeat(2, 1fr);
+			.fact {
+				width: 75%;
+			}
+		}
+	}
+
+	@media (min-width: $desktop) {
+		.row-grid {
+			grid-template-columns: repeat(4, 1fr);
+			.fact {
+				width: 100%;
+			}
+		}
+	}
+}

@@ -1,15 +1,11 @@
 #price {
 	background-color: $background-price;
-
-	.title {
-		@include title-template;
-	}
 	text-align: center;
 	.row-grid {
 		display: grid;
 		grid-template-columns: repeat(1, 1fr);
-		grid-gap: 30px;
 		margin-bottom: 30px;
+		grid-gap: 30px;
 		.box {
 			margin: 0 auto;
 			background-color: #fff;

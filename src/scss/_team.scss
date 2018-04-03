@@ -5,7 +5,6 @@
 	background-position: center;
 
 	.title {
-		@include title-template;
 		h2 {
 			color: $font-header-light-color;
 		}

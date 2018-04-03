@@ -1,0 +1,54 @@
+#social-media {
+	text-align: center;
+	margin: 30px auto;
+
+	button {
+		@include btn-social-icons-template;
+		@media (min-width: $desktop) {
+			&:hover {
+				background-color: rgba(0, 0, 0, 0.4);
+			}
+		}
+	}
+
+	.text {
+		color: #aeaeae;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 30px;
+		text-transform: uppercase;
+		margin: auto 15px;
+	}
+
+	.btn-group {
+		margin: 15px auto;
+	}
+
+	.twitter {
+		background-color: #34c5f0;
+	}
+
+	.linkedin {
+		background-color: #127cb4;
+	}
+
+	.facebook {
+		background-color: #336297;
+	}
+
+	.google-p {
+		background-color: #e74237;
+	}
+
+	.pinterest {
+		background-color: #b71c29;
+	}
+
+	@media (min-width: $tablet) {
+		.btn-group {
+			button {
+				margin: auto 10px;
+			}
+		}
+	}
+}

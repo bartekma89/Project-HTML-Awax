@@ -1,0 +1,71 @@
+#premium {
+	.feature {
+		h3,
+		p,
+		li {
+			line-height: 30px;
+		}
+
+		h3 {
+			color: $font-paragraph-color;
+			font-size: $font-medium-3-size;
+			font-weight: $font-bold-weight;
+			text-transform: uppercase;
+		}
+
+		p {
+			color: $font-paragraph-color-2;
+			font-size: $font-medium-size;
+			font-weight: $font-light-weight;
+		}
+
+		ul {
+			li {
+				color: $font-paragraph-color-2;
+				font-size: $font-medium-size;
+				font-weight: $font-light-weight;
+				text-transform: uppercase;
+				&::before {
+					content: '\2014';
+				}
+			}
+		}
+	}
+
+	button {
+		@include btn-template;
+	}
+
+	text-align: center;
+	img {
+		width: 100%;
+	}
+	.row-grid {
+		border-bottom: 1px solid #bebebe;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		.feature {
+			text-align: left;
+			margin-top: 40px;
+			margin-left: 15%;
+			margin-bottom: 20px;
+			&::before {
+				content: url('../images/premium/icon.png');
+				display: inline-block;
+				position: absolute;
+				left: 13%;
+			}
+		}
+	}
+
+	@media (min-width: $desktop) {
+		.row-grid {
+			grid-template-columns: repeat(2, 1fr);
+			.feature {
+				&::before {
+					left: 52%;
+				}
+			}
+		}
+	}
+}

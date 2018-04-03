@@ -1,8 +1,4 @@
 #about {
-	.title {
-		@include title-template;
-	}
-
 	.content {
 		p {
 			color: $font-paragraph-color;

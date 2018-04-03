@@ -1,13 +1,10 @@
 #projects {
-	background-color: #f7f7f7;
+	background-color: $background-grey;
 	text-align: center;
-	.title {
-		@include title-template;
-	}
 
 	.btn-group {
-		background-color: #ededed;
-		border: 1px solid #cfcfcf;
+		background-color: $background-price;
+		border: 1px solid $border-color-1;
 		border-radius: 45px;
 		width: 70%;
 		font-size: 0;
@@ -23,7 +20,7 @@
 			display: block;
 			padding: 15px;
 			&:not(:last-of-type) {
-				border-bottom: 1px solid #cfcfcf;
+				border-bottom: 1px solid $border-color-1;
 			}
 		}
 	}
@@ -120,7 +117,7 @@
 				border-top: 3px solid transparent;
 				&:not(:last-of-type) {
 					border-bottom: none;
-					border-right: 1px solid #cfcfcf;
+					border-right: 1px solid $border-color-1;
 				}
 				&:first-of-type {
 					padding-left: 15px;

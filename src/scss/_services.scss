@@ -3,7 +3,6 @@
 	padding-bottom: 15px;
 
 	.title {
-		@include title-template;
 		h2 {
 			color: $font-header-light-color;
 		}
