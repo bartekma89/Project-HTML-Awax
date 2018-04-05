@@ -7,7 +7,7 @@
 		filter: grayscale(100%);
 	}
 	.container-list {
-		background-color: #fff;
+		background-color: $background-white;
 		width: 80%;
 		margin: 25px auto;
 
@@ -25,16 +25,16 @@
 				width: 35px;
 				height: 35px;
 				border-radius: 50%;
-				background-color: #bebebe;
+				background-color: $background-icon-light;
 				display: flex;
 				justify-content: center;
 				align-items: center;
 			}
 			.text {
 				width: 90%;
-				color: #7e7e7e;
-				font-size: 16px;
-				font-weight: 300;
+				color: $font-description-color;
+				font-size: $font-medium-1-size;
+				font-weight: $font-light-weight;
 			}
 		}
 	}

@@ -627,6 +627,8 @@ body {
       -webkit-transition: all 0.3s ease-in-out;
       -o-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out; }
+      #team .team-member .content .btn-icon:active {
+        background-color: #b88b58; }
       @media (min-width: 992px) {
         #team .team-member .content .btn-icon:hover {
           background-color: #b88b58; } }
@@ -925,6 +927,8 @@ body {
     -webkit-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out; }
+    #social-media button:active {
+      background-color: #b88b58; }
     @media (min-width: 992px) {
       #social-media button:hover {
         background-color: #b88b58; } }
@@ -1082,3 +1086,102 @@ body {
         width: 10%; }
       #map .container-list .text {
         width: 90%; } }
+
+footer {
+  background-color: #000;
+  text-align: center; }
+  footer .container {
+    width: 85%; }
+  footer .row-grid {
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px; }
+    footer .row-grid .social-media button {
+      width: 33px;
+      height: 33px;
+      border: none;
+      border-radius: 50%;
+      background-color: #bebebe;
+      cursor: pointer;
+      margin: auto 3px;
+      color: #fff;
+      -webkit-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      margin: 15px 5px;
+      background-color: #373737; }
+      footer .row-grid .social-media button:active {
+        background-color: #b88b58; }
+      @media (min-width: 992px) {
+        footer .row-grid .social-media button:hover {
+          background-color: #b88b58; } }
+    footer .row-grid .awax {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 25px;
+      text-transform: uppercase; }
+    footer .row-grid .description {
+      margin: auto 10%;
+      color: #7e7e7e;
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 21px; }
+    footer .row-grid .form {
+      background-color: #373737; }
+    footer .row-grid form {
+      height: 200px;
+      padding: 40px; }
+      footer .row-grid form .text {
+        width: 80%;
+        margin: 15px auto;
+        border: none;
+        border-bottom: 2px solid #aeaeae;
+        background-color: transparent;
+        text-align: center;
+        color: #9e9e9e;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 25px;
+        text-transform: uppercase; }
+      footer .row-grid form .subscribe {
+        height: 45px;
+        width: 190px;
+        background-color: #b88b58;
+        border: none;
+        border-radius: 25px;
+        margin: 35px auto;
+        color: #fff; }
+        @media (min-width: 992px) {
+          footer .row-grid form .subscribe {
+            -webkit-transition: all 0.4s ease-in-out;
+            -o-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out; } }
+        footer .row-grid form .subscribe span {
+          font-family: "Montserrat", sans-serif;
+          font-size: 12px;
+          font-weight: 700;
+          line-height: 18px;
+          text-transform: uppercase; }
+        @media (min-width: 992px) {
+          footer .row-grid form .subscribe:hover {
+            background-color: #000;
+            color: #b88b58;
+            -webkit-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                    transform: scale(1.1); } }
+  @media (min-width: 992px) {
+    footer .container {
+      width: 90%; }
+    footer .row-grid {
+      margin: 40px auto;
+      grid-template-columns: repeat(3, 1fr); }
+      footer .row-grid .social-m {
+        position: relative; }
+        footer .row-grid .social-m .awax {
+          position: absolute;
+          bottom: 0;
+          left: 0; } }

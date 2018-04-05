@@ -15,6 +15,7 @@ $font-button-size: 12px;
 $font-light-size: 12px;
 $font-constact-size: 13px;
 $font-medium-size: 14px;
+$font-medium-1-size: 16px;
 $font-medium-2-size: 18px;
 $font-medium-3-size: 21px;
 $font-large-1-size: 24px;
@@ -31,16 +32,18 @@ $font-header-light-color: #fff;
 $font-header-dark-color: #000;
 $font-header-gold-color: #b88b58;
 $font-contact-color: #9e9e9e;
+$font-gold-color: #b88b58;
 
 //colors
-$font-gold-color: #b88b58;
 $background-button-hover: #000;
 $background-black: #000;
 $background-gold: #b88b58;
 $background-body: #fff;
+$background-white: #fff;
 $background-icon-light: #bebebe;
 $border-color: #393939;
 $border-color-1: #cfcfcf;
+$border-color-2: #aeaeae;
 $background-icon-dark: #373737;
 $background-darkGrey: #373737;
 $background-price: #ededed;
@@ -63,6 +66,9 @@ $largeDesktop: 1200px;
 	margin: auto 3px;
 	color: $font-header-light-color;
 	transition: all 0.3s ease-in-out;
+	&:active {
+		background-color: $background-gold;
+	}
 	@media (min-width: $desktop) {
 		&:hover {
 			background-color: $background-gold;

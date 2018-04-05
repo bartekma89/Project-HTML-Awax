@@ -1,0 +1,82 @@
+footer {
+	background-color: $background-black;
+	text-align: center;
+
+	.container {
+		width: 85%;
+	}
+	.row-grid {
+		margin: 20px auto;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap: 20px;
+		.social-media {
+			button {
+				@include btn-social-icons-template;
+				margin: 15px 5px;
+				background-color: $background-darkGrey;
+			}
+		}
+		.awax {
+			margin-top: 10px;
+			margin-bottom: 10px;
+			color: $background-white;
+			font-size: $font-medium-size;
+			font-weight: $font-medium-weight;
+			line-height: 25px;
+			text-transform: uppercase;
+		}
+
+		.description {
+			margin: auto 10%;
+			color: $font-description-color;
+			font-size: $font-light-size;
+			font-weight: $font-light-weight;
+			line-height: 21px;
+		}
+
+		.form {
+			background-color: $background-darkGrey;
+		}
+
+		form {
+			height: 200px;
+			padding: 40px;
+			.text {
+				width: 80%;
+				margin: 15px auto;
+				border: none;
+				border-bottom: 2px solid $border-color-2;
+				background-color: transparent;
+				text-align: center;
+				color: $font-contact-color;
+				font-size: $font-constact-size;
+				font-weight: $font-light-weight;
+				line-height: 25px;
+				text-transform: uppercase;
+			}
+			.subscribe {
+				@include btn-template;
+			}
+		}
+	}
+
+	@media (min-width: $desktop) {
+		.container {
+			width: 90%;
+		}
+		.row-grid {
+			margin: 40px auto;
+			grid-template-columns: repeat(3, 1fr);
+
+			.social-m {
+				position: relative;
+				.awax {
+					position: absolute;
+					bottom: 0;
+					left: 0;
+				}
+			}
+		}
+	}
+}
