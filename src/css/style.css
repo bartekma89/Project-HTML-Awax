@@ -165,7 +165,7 @@ body {
 
 #nav .container {
   background-color: #000;
-  width: 100%;
+  width: 100vw;
   position: fixed;
   z-index: 999; }
   #nav .container nav {
@@ -1018,7 +1018,67 @@ body {
         grid-gap: 30px; } }
 
 #map {
-  height: 450px;
-  width: 100vw;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%); }
+  position: relative; }
+  #map #mapGoogle {
+    height: 400px;
+    width: 100vw;
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%); }
+  #map .container-list {
+    background-color: #fff;
+    width: 80%;
+    margin: 25px auto; }
+    #map .container-list .list-element {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin: 15px auto; }
+      #map .container-list .list-element .layer {
+        width: 10%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+        margin-right: 15px; }
+      #map .container-list .list-element .icon {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: #bebebe;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+      #map .container-list .list-element .text {
+        width: 90%;
+        color: #7e7e7e;
+        font-size: 16px;
+        font-weight: 300; }
+  @media (min-width: 768px) {
+    #map .container-list .list-element .layer {
+      width: 20%; }
+    #map .container-list .list-element .text {
+      width: 80%; } }
+  @media (min-width: 992px) {
+    #map .container-list {
+      position: absolute;
+      width: 400px;
+      top: 50%;
+      left: 7%;
+      -webkit-transform: translateY(-60%);
+          -ms-transform: translateY(-60%);
+              transform: translateY(-60%); }
+      #map .container-list .layer {
+        width: 10%; }
+      #map .container-list .text {
+        width: 90%; } }

@@ -1,5 +1,70 @@
 #map {
-	height: 450px;
-	width: 100vw;
-	filter: grayscale(100%);
+	position: relative;
+
+	#mapGoogle {
+		height: 400px;
+		width: 100vw;
+		filter: grayscale(100%);
+	}
+	.container-list {
+		background-color: #fff;
+		width: 80%;
+		margin: 25px auto;
+
+		.list-element {
+			display: flex;
+			align-items: center;
+			margin: 15px auto;
+			.layer {
+				width: 10%;
+				display: flex;
+				justify-content: flex-end;
+				margin-right: 15px;
+			}
+			.icon {
+				width: 35px;
+				height: 35px;
+				border-radius: 50%;
+				background-color: #bebebe;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.text {
+				width: 90%;
+				color: #7e7e7e;
+				font-size: 16px;
+				font-weight: 300;
+			}
+		}
+	}
+
+	@media (min-width: $tablet) {
+		.container-list {
+			.list-element {
+				.layer {
+					width: 20%;
+				}
+				.text {
+					width: 80%;
+				}
+			}
+		}
+	}
+
+	@media (min-width: $desktop) {
+		.container-list {
+			position: absolute;
+			width: 400px;
+			top: 50%;
+			left: 7%;
+			transform: translateY(-60%);
+			.layer {
+				width: 10%;
+			}
+			.text {
+				width: 90%;
+			}
+		}
+	}
 }

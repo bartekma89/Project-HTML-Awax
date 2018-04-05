@@ -5,13 +5,14 @@ function initMap() {
 		zoom: 17,
 	};
 
-	var map = new google.maps.Map(document.getElementById('map'), mapProp);
+	var map = new google.maps.Map(
+		document.getElementById('mapGoogle'),
+		mapProp
+	);
 
 	var marker = new google.maps.Marker({
 		map: map,
 		position: uluru,
 		animation: google.maps.Animation.DROP,
-		draggable: true,
 	});
-	marker.addListener('click', toggleBounce);
 }
