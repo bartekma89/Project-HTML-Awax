@@ -319,7 +319,7 @@ body {
     #header .content h1 {
       color: #fff;
       font-family: "Montserrat", sans-serif;
-      font-size: 28px;
+      font-size: 32px;
       font-weight: 700;
       text-transform: uppercase; }
       #header .content h1 span {
@@ -597,7 +597,7 @@ body {
     padding-top: 45px;
     padding-bottom: 45px;
     background-color: #fff;
-    width: 70%;
+    width: 80%;
     margin: 0 auto; }
     #team .team-member:last-of-type {
       margin-bottom: 30px; }
@@ -1174,6 +1174,37 @@ footer {
             -webkit-transform: scale(1.1);
                 -ms-transform: scale(1.1);
                     transform: scale(1.1); } }
+  footer #backToTop {
+    position: fixed;
+    bottom: 2%;
+    left: 5%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: 45px;
+    height: 45px;
+    background-color: #b88b58;
+    border-radius: 50%;
+    border: none;
+    z-index: 999;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out; }
+    footer #backToTop i {
+      border: solid #fff;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 8px;
+      margin-top: 15px;
+      font-weight: 400; }
+    footer #backToTop .up {
+      -webkit-transform: rotate(-135deg);
+          -ms-transform: rotate(-135deg);
+              transform: rotate(-135deg); }
+    footer #backToTop.show {
+      opacity: 1;
+      visibility: visible; }
   @media (min-width: 992px) {
     footer .container {
       width: 80%; }
@@ -1186,28 +1217,17 @@ footer {
         footer .row-grid .social-m .awax {
           position: absolute;
           bottom: 0;
-          left: 0; } }
-  footer #backToTop {
-    position: absolute;
-    top: 0;
-    left: 5%;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-    width: 65px;
-    height: 65px;
-    background-color: #b88b58;
-    border-radius: 50%;
-    border: none;
-    z-index: 999; }
-    footer #backToTop i {
-      border: solid #fff;
-      border-width: 0 3px 3px 0;
-      display: inline-block;
-      padding: 10px;
-      margin-top: 25px;
-      font-weight: 400; }
-    footer #backToTop .up {
-      -webkit-transform: rotate(-135deg);
-          -ms-transform: rotate(-135deg);
-              transform: rotate(-135deg); }
+          left: 0; }
+    footer #backToTop {
+      width: 65px;
+      height: 65px;
+      position: absolute;
+      top: 0;
+      left: 5%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+      opacity: 1; }
+      footer #backToTop i {
+        padding: 10px;
+        margin-top: 25px; } }

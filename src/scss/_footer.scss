@@ -62,6 +62,37 @@ footer {
 		}
 	}
 
+	#backToTop {
+		position: fixed;
+		bottom: 2%;
+		left: 5%;
+		transform: translateY(-50%);
+		width: 45px;
+		height: 45px;
+		background-color: $background-gold;
+		border-radius: 50%;
+		border: none;
+		z-index: 999;
+		opacity: 0;
+		transition: opacity 0.3s ease-in-out;
+		i {
+			border: solid #fff;
+			border-width: 0 3px 3px 0;
+			display: inline-block;
+			padding: 8px;
+			margin-top: 15px;
+			font-weight: 400;
+		}
+		.up {
+			transform: rotate(-135deg);
+		}
+
+		&.show {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+
 	@media (min-width: $desktop) {
 		.container {
 			width: 80%;
@@ -80,29 +111,19 @@ footer {
 				}
 			}
 		}
-	}
 
-	#backToTop {
-		position: absolute;
-		top: 0;
-		left: 5%;
-		transform: translateY(-50%);
-		width: 65px;
-		height: 65px;
-		background-color: $background-gold;
-		border-radius: 50%;
-		border: none;
-		z-index: 999;
-		i {
-			border: solid #fff;
-			border-width: 0 3px 3px 0;
-			display: inline-block;
-			padding: 10px;
-			margin-top: 25px;
-			font-weight: 400;
-		}
-		.up {
-			transform: rotate(-135deg);
+		#backToTop {
+			width: 65px;
+			height: 65px;
+			position: absolute;
+			top: 0;
+			left: 5%;
+			transform: translateY(-50%);
+			opacity: 1;
+			i {
+				padding: 10px;
+				margin-top: 25px;
+			}
 		}
 	}
 }
