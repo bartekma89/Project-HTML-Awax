@@ -1,59 +1,78 @@
-#opinions {
-	background-color: $background-grey;
-
-	.client {
-		text-align: center;
-		margin-top: 70px;
-		.content {
-			.businessCard {
-				margin: 30px auto;
-				h4,
-				p {
-					color: $font-header-dark-color;
-					font-family: $font-basic;
-					line-height: 28px;
-				}
-				h4 {
-					font-size: $font-large-1-size;
-					font-weight: $font-bold-weight;
-				}
-				p {
-					font-size: $font-medium-2-size;
-					font-weight: $font-medium-weight;
-				}
+@mixin client {
+	text-align: center;
+	//margin-top: 70px;
+	> img {
+		width: 150px;
+		height: 150px;
+	}
+	.content {
+		.businessCard {
+			margin: 30px auto;
+			h4,
+			p {
+				color: $font-header-dark-color;
+				font-family: $font-basic;
+				line-height: 28px;
 			}
+			h4 {
+				font-size: $font-large-1-size;
+				font-weight: $font-bold-weight;
+			}
+			p {
+				font-size: $font-medium-2-size;
+				font-weight: $font-medium-weight;
+			}
+		}
 
-			.description {
-				margin: 0 auto;
-				width: 85%;
-				max-width: 1000px;
-				p {
-					margin-top: 18px;
-					color: $font-description-color;
-					font-family: $font-basic;
-					font-size: $font-medium-size;
-					font-weight: $font-light-weight;
-					line-height: 25px;
-				}
+		.description {
+			margin: 0 auto;
+			width: 85%;
+			max-width: 1000px;
+			p {
+				margin-top: 18px;
+				color: $font-description-color;
+				font-family: $font-basic;
+				font-size: $font-medium-size;
+				font-weight: $font-light-weight;
+				line-height: 25px;
 			}
 		}
 	}
+}
 
-	.dot-container {
-		margin: 0 auto;
-		text-align: center;
-		margin: 51px auto 42px;
-		.dot {
-			display: inline-block;
-			width: 14px;
-			height: 14px;
-			border-radius: 50%;
-			border: 2px solid $background-gold;
-			margin: auto 5px;
+#opinions {
+	background-color: $background-grey;
+
+	.slider {
+		.slide-group {
+			position: relative;
+			overflow: hidden;
+			.slide {
+				width: 100%;
+				display: none;
+				@include client;
+			}
+			.active-slide {
+				display: inline-block;
+			}
 		}
 
-		.active {
-			background-color: $background-gold;
+		.dot-container {
+			margin: 0 auto;
+			text-align: center;
+			margin: 51px auto 42px;
+			.dot {
+				display: inline-block;
+				width: 14px;
+				height: 14px;
+				border-radius: 50%;
+				border: 2px solid $background-gold;
+				margin: auto 5px;
+			}
+
+			.active {
+				background-color: $background-gold;
+			}
 		}
 	}
 }
