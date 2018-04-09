@@ -652,28 +652,11 @@ body {
   background-color: #f7f7f7; }
   #opinions #slider {
     margin: 0 auto;
-    max-width: 90%;
-    /* .dot-container {
-			margin: 0 auto;
-			text-align: center;
-			margin: 51px auto 42px;
-			.dot {
-				display: inline-block;
-				width: 14px;
-				height: 14px;
-				border-radius: 50%;
-				border: 2px solid $background-gold;
-				margin: auto 5px;
-			}
-		
-			.active {
-				background-color: $background-gold;
-			}
-		} */ }
+    max-width: 90%; }
     #opinions #slider .slide-viewer {
       overflow: hidden;
       position: relative;
-      min-height: 70vh; }
+      min-height: 55vh; }
       #opinions #slider .slide-viewer .slide-group {
         left: 0;
         -webkit-transition: left 0.5s;
@@ -729,10 +712,11 @@ body {
     #opinions #slider .controls div {
       width: 16px;
       height: 16px;
-      margin: 8px;
+      margin: 10px;
       background-color: #fff;
       border: 2px solid #b88b58;
-      border-radius: 50%; }
+      border-radius: 50%;
+      cursor: pointer; }
     #opinions #slider .controls .current {
       background-color: #b88b58; }
 
