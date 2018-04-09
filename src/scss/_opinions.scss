@@ -1,6 +1,6 @@
 @mixin client {
 	text-align: center;
-	//margin-top: 70px;
+	margin-top: 50px;
 	> img {
 		width: 150px;
 		height: 150px;
@@ -43,21 +43,49 @@
 #opinions {
 	background-color: $background-grey;
 
-	.slider {
-		.slide-group {
-			position: relative;
+	#slider {
+		margin: 0 auto;
+		max-width: 90%;
+		.slide-viewer {
 			overflow: hidden;
-			.slide {
+			position: relative;
+			min-height: 70vh;
+			.slide-group {
+				left: 0;
+				transition: left 0.5s;
+				position: relative;
+				height: 100%;
 				width: 100%;
-				display: none;
-				@include client;
-			}
-			.active-slide {
-				display: inline-block;
+				.slide {
+					width: 100%;
+					position: absolute;
+					@include client;
+				}
+				.active-slide {
+					display: inline-block;
+				}
 			}
 		}
 
-		.dot-container {
+		.controls {
+			width: 350px;
+			height: 50px;
+			margin: 0 auto;
+			display: flex;
+			justify-content: center;
+		}
+		.controls div {
+			width: 16px;
+			height: 16px;
+			margin: 8px;
+			background-color: #fff;
+			border: 2px solid $background-gold;
+			border-radius: 50%;
+		}
+		.controls .current {
+			background-color: $background-gold;
+		}
+		/* .dot-container {
 			margin: 0 auto;
 			text-align: center;
 			margin: 51px auto 42px;
@@ -69,10 +97,10 @@
 				border: 2px solid $background-gold;
 				margin: auto 5px;
 			}
-
+		
 			.active {
 				background-color: $background-gold;
 			}
-		}
+		} */
 	}
 }

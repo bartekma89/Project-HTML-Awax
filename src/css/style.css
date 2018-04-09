@@ -650,54 +650,90 @@ body {
 
 #opinions {
   background-color: #f7f7f7; }
-  #opinions .slider .slide-group {
-    position: relative;
-    overflow: hidden; }
-    #opinions .slider .slide-group .slide {
-      width: 100%;
-      display: none;
-      text-align: center; }
-      #opinions .slider .slide-group .slide > img {
-        width: 150px;
-        height: 150px; }
-      #opinions .slider .slide-group .slide .content .businessCard {
-        margin: 30px auto; }
-        #opinions .slider .slide-group .slide .content .businessCard h4,
-        #opinions .slider .slide-group .slide .content .businessCard p {
-          color: #000;
-          font-family: "Montserrat", sans-serif;
-          line-height: 28px; }
-        #opinions .slider .slide-group .slide .content .businessCard h4 {
-          font-size: 24px;
-          font-weight: 700; }
-        #opinions .slider .slide-group .slide .content .businessCard p {
-          font-size: 18px;
-          font-weight: 400; }
-      #opinions .slider .slide-group .slide .content .description {
-        margin: 0 auto;
-        width: 85%;
-        max-width: 1000px; }
-        #opinions .slider .slide-group .slide .content .description p {
-          margin-top: 18px;
-          color: #7e7e7e;
-          font-family: "Montserrat", sans-serif;
-          font-size: 14px;
-          font-weight: 300;
-          line-height: 25px; }
-    #opinions .slider .slide-group .active-slide {
-      display: inline-block; }
-  #opinions .slider .dot-container {
+  #opinions #slider {
     margin: 0 auto;
-    text-align: center;
-    margin: 51px auto 42px; }
-    #opinions .slider .dot-container .dot {
-      display: inline-block;
-      width: 14px;
-      height: 14px;
-      border-radius: 50%;
+    max-width: 90%;
+    /* .dot-container {
+			margin: 0 auto;
+			text-align: center;
+			margin: 51px auto 42px;
+			.dot {
+				display: inline-block;
+				width: 14px;
+				height: 14px;
+				border-radius: 50%;
+				border: 2px solid $background-gold;
+				margin: auto 5px;
+			}
+		
+			.active {
+				background-color: $background-gold;
+			}
+		} */ }
+    #opinions #slider .slide-viewer {
+      overflow: hidden;
+      position: relative;
+      min-height: 70vh; }
+      #opinions #slider .slide-viewer .slide-group {
+        left: 0;
+        -webkit-transition: left 0.5s;
+        -o-transition: left 0.5s;
+        transition: left 0.5s;
+        position: relative;
+        height: 100%;
+        width: 100%; }
+        #opinions #slider .slide-viewer .slide-group .slide {
+          width: 100%;
+          position: absolute;
+          text-align: center;
+          margin-top: 50px; }
+          #opinions #slider .slide-viewer .slide-group .slide > img {
+            width: 150px;
+            height: 150px; }
+          #opinions #slider .slide-viewer .slide-group .slide .content .businessCard {
+            margin: 30px auto; }
+            #opinions #slider .slide-viewer .slide-group .slide .content .businessCard h4,
+            #opinions #slider .slide-viewer .slide-group .slide .content .businessCard p {
+              color: #000;
+              font-family: "Montserrat", sans-serif;
+              line-height: 28px; }
+            #opinions #slider .slide-viewer .slide-group .slide .content .businessCard h4 {
+              font-size: 24px;
+              font-weight: 700; }
+            #opinions #slider .slide-viewer .slide-group .slide .content .businessCard p {
+              font-size: 18px;
+              font-weight: 400; }
+          #opinions #slider .slide-viewer .slide-group .slide .content .description {
+            margin: 0 auto;
+            width: 85%;
+            max-width: 1000px; }
+            #opinions #slider .slide-viewer .slide-group .slide .content .description p {
+              margin-top: 18px;
+              color: #7e7e7e;
+              font-family: "Montserrat", sans-serif;
+              font-size: 14px;
+              font-weight: 300;
+              line-height: 25px; }
+        #opinions #slider .slide-viewer .slide-group .active-slide {
+          display: inline-block; }
+    #opinions #slider .controls {
+      width: 350px;
+      height: 50px;
+      margin: 0 auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+    #opinions #slider .controls div {
+      width: 16px;
+      height: 16px;
+      margin: 8px;
+      background-color: #fff;
       border: 2px solid #b88b58;
-      margin: auto 5px; }
-    #opinions .slider .dot-container .active {
+      border-radius: 50%; }
+    #opinions #slider .controls .current {
       background-color: #b88b58; }
 
 #logos {
