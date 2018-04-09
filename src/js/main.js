@@ -40,6 +40,8 @@
 				},
 				time
 			);
+			$('.nav-content').hide();
+			$('#nav-toggle').removeClass('active');
 		});
 	}
 })(jQuery);

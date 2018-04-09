@@ -49,7 +49,10 @@
 		.slide-viewer {
 			overflow: hidden;
 			position: relative;
-			min-height: 55vh;
+			min-height: 50vh;
+			@media (max-width: $tablet) {
+				min-height: 100vh;
+			}
 			.slide-group {
 				left: 0;
 				transition: left 0.5s;
@@ -68,9 +71,9 @@
 		}
 
 		.controls {
-			width: 350px;
+			width: 100%;
 			height: 50px;
-			margin: 0 auto;
+			margin: 5px auto;
 			display: flex;
 			justify-content: center;
 		}
